@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.loginH1 {
+  margin-bottom: 10px;
+}
+.loginForm {
+  width: 300px;
+  border: none;
+  padding: 20px;
+  background-color: #CDCDCD;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.loginField {
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.submit_btn {
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: #00AAFF;
+}
+.error_box {
+  text-align: center;
+  margin-top: 10px; 
+  margin-bottom: 15px;
+}
+.error_msg {
+  color: red;
+}

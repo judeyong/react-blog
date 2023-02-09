@@ -1,0 +1,52 @@
+{
+  "members": [
+    {
+      "email": "abcd@naver.com",
+      "password": 12345,
+      "name": "jude",
+      "id": 1
+    },
+    {
+      "email": "aaaa@naver.com",
+      "password": 12345,
+      "name": "jean",
+      "id": 3
+    },
+    {
+      "email": "abcd2@naver.com",
+      "password": 12345,
+      "name": "kimkim",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "title": "1234",
+      "desc": "12345",
+      "created_At": 1675840960994,
+      "author": "abcd@naver.com",
+      "id": 8
+    },
+    {
+      "title": "react react",
+      "desc": "react react is good!",
+      "created_At": 1675843519338,
+      "author": "aaaa@naver.com",
+      "id": 11
+    },
+    {
+      "title": "redux redux",
+      "desc": "redux redux",
+      "created_At": 1675843552797,
+      "author": "abcd2@naver.com",
+      "id": 12
+    },
+    {
+      "title": "aaaa@naver.com Test!",
+      "desc": "aaaa@naver.com Test!",
+      "created_At": 1675917607481,
+      "author": "aaaa@naver.com",
+      "id": 13
+    }
+  ]
+}

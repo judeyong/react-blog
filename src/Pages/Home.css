@@ -1,0 +1,15 @@
+.home-main{
+  display: flex;
+  flex-direction: column;
+}
+.home-body {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.home-list {
+  width: 50%;
+}

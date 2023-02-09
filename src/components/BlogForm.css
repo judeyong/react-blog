@@ -1,0 +1,22 @@
+.input-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  height: 400px;
+}
+.input-title {
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #CDCDCD;
+  margin-bottom: 10px;
+}
+.input-desc {
+  margin-top: 5px;
+  border: 1px solid #CDCDCD;
+}
+.post-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
