@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/judeyong.github.io/react-blog/static/css/main.af2ad81d.css",
-    "main.js": "/judeyong.github.io/react-blog/static/js/main.0b490759.js",
-    "static/js/787.f587e8d5.chunk.js": "/judeyong.github.io/react-blog/static/js/787.f587e8d5.chunk.js",
-    "index.html": "/judeyong.github.io/react-blog/index.html",
-    "main.af2ad81d.css.map": "/judeyong.github.io/react-blog/static/css/main.af2ad81d.css.map",
-    "main.0b490759.js.map": "/judeyong.github.io/react-blog/static/js/main.0b490759.js.map",
-    "787.f587e8d5.chunk.js.map": "/judeyong.github.io/react-blog/static/js/787.f587e8d5.chunk.js.map"
+    "main.css": "/react-blog/static/css/main.af2ad81d.css",
+    "main.js": "/react-blog/static/js/main.d98cab1b.js",
+    "static/js/787.f587e8d5.chunk.js": "/react-blog/static/js/787.f587e8d5.chunk.js",
+    "index.html": "/react-blog/index.html",
+    "main.af2ad81d.css.map": "/react-blog/static/css/main.af2ad81d.css.map",
+    "main.d98cab1b.js.map": "/react-blog/static/js/main.d98cab1b.js.map",
+    "787.f587e8d5.chunk.js.map": "/react-blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af2ad81d.css",
-    "static/js/main.0b490759.js"
+    "static/js/main.d98cab1b.js"
   ]
 }
