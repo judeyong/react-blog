@@ -1,4 +1,4 @@
-### 데모
+##### 데모
 
 
 -----
@@ -16,12 +16,13 @@ https://judeyong.github.io/react-blog/
 -----
 
 
-### 설치및 실행.
-
-npm install
+##### 설치와 실행 방법.
 
 
-npm run dev
+터미널에서 npm install
+
+
+설치 완료 후 npm run dev
 
 
 -----
