@@ -39,20 +39,20 @@ react를 공부하면서 redux, typescript, nextjs, react-native등 또 새로�
 
 
 사용한 라이브러리   
-    "@reduxjs/toolkit": "^1.9.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.6",
-    "concurrently": "^7.6.0",
-    "json-server": "^0.17.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5",
-    "react-router-dom": "^6.8.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "@reduxjs/toolkit": "^1.9.2",   
+    "@testing-library/jest-dom": "^5.16.5",    
+    "@testing-library/react": "^13.4.0",    
+    "@testing-library/user-event": "^13.5.0",    
+    "axios": "^1.2.6",    
+    "concurrently": "^7.6.0",    
+    "json-server": "^0.17.1",    
+    "react": "^18.2.0",    
+    "react-dom": "^18.2.0",    
+    "react-redux": "^8.0.5",    
+    "react-router-dom": "^6.8.0",    
+    "react-scripts": "5.0.1",    
+    "styled-components": "^5.3.6",    
+    "web-vitals": "^2.1.4"    
 
 
 -----
