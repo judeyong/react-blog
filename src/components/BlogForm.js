@@ -23,7 +23,8 @@ const BlogForm = () => {
       console.log('res', res);
       setTitle('');
       setDesc('');
-      window.location.replace('/');
+      //window.location.replace('/');
+      window.location.reload();
     })
   };
 

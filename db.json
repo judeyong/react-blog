@@ -17,12 +17,18 @@
       "password": 12345,
       "name": "kimkim",
       "id": 5
+    },
+    {
+      "email": "akak@naevr.com",
+      "password": 123456,
+      "name": "kimkim",
+      "id": 6
     }
   ],
   "posts": [
     {
       "title": "1234",
-      "desc": "12345",
+      "desc": "test 1234",
       "created_At": 1675840960994,
       "author": "abcd@naver.com",
       "id": 8
@@ -47,6 +53,13 @@
       "created_At": 1675917607481,
       "author": "aaaa@naver.com",
       "id": 13
+    },
+    {
+      "title": "first post",
+      "desc": "hi bye",
+      "created_At": 1676993183339,
+      "author": "akak@naevr.com",
+      "id": 14
     }
   ]
 }

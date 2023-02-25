@@ -25,7 +25,8 @@ const Home = () => {
     .then((res) => {
       console.log('deleted ', res.data);
       setModal(false);
-      window.location.replace('/');
+      //window.location.replace('/react-blog');
+      window.location.reload();
     })
   }
 
@@ -38,7 +39,8 @@ const Home = () => {
       }).then((res)=> {
         console.log('editing success');
         setModal(false);
-        window.location.replace('/');
+        //window.location.replace('/');
+        window.location.reload();
       })
     }
     setisEditing(true);

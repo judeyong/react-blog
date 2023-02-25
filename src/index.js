@@ -10,7 +10,7 @@ import { store } from './store/index';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename='react-blog'>
       <App />
     </BrowserRouter>
   </Provider>
