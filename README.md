@@ -60,16 +60,18 @@ react를 공부하면서 redux, typescript, nextjs, react-native등 또 새로�
 
 
 ### 라이브러리 역할
-로그인 페이지와 회원가입 페이지 그리고 블로그 페이지가 존재합니다.   
+먼저 로그인 페이지와 회원가입 페이지 그리고 블로그 페이지.   
+3개의 페이지가 존재합니다.   
 
 json-server를 db역할로 사용하였습니다.    
-회원 가입되면 members에 저장됩니다.
-글은 post에 저장됩니다.
+상위 디렉토리의 db.json 파일에 안에 데이터를 저장합니다.   
+회원 가입이 성공하면 db.json 파일에 안에 members 배열에 객체로 저장됩니다.   
+회원들이 쓴 글 들은 db.json 파일에 안에 posts 배열에 객체로 저장됩니다.    
+json-server로 서버가 켜지면 아래 경로로 접근 하여 axios 메소드로 데이터에 접근합니다.   
     
     'http://localhost:3004/members'
     'http://localhost:3004/posts'
 
-상위 디렉토리의 db.json 파일에 안에 데이터를 저장하고 불러옵니다.   
 
 axios를 이용하여 데이터를 주고 받습니다.   
     
