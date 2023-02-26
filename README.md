@@ -31,7 +31,7 @@ https://judeyong.github.io/react-blog/
 react를 공부하면서 redux, typescript, nextjs, react-native등 또 새로운 기술을 접하였습니다.   
 여러 가지 기술들을 보았지만 거의 대부분 클론 코딩이었습니다.   
 클론 코딩은 상당히 도움이 되었지만 제 스스로 시작한 프로젝트는 하나도 없는 게 저의 고민이었습니다.   
-그래서 서툴더라도 아는 것을 최대한 활용하면서 만들어 보자 마음먹었습니다.   
+그래서 서툴더라도 아는 것을 활용해서 스스로 만들어 보자 계획을 세웠습니다.   
 아직도 많은 것이 미흡하고 서툽니다. 스스로 해보는 게 가장 중요하다 생각하고 만들면서 연습했습니다.   
 
 
@@ -60,14 +60,32 @@ react를 공부하면서 redux, typescript, nextjs, react-native등 또 새로�
 
 
 ### 라이브러리 역할
-먼저 로그인 페이지와 회원가입 페이지 그리고 블로그 페이지.   
-3개의 페이지가 존재합니다.   
+react-router    
+먼저 로그인 페이지와 회원가입 페이지 그리고 블로그 페이지(/ 루트에 해당됨).   
+react-router를 통해 3개의 페이지를 이동합니다.    
 
-json-server를 db역할로 사용하였습니다.    
+    const routes = [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path:'/login',
+        element: <LoginPage />,
+        auth: false,
+      },
+      {
+        path:'/signup',
+        element: <SignUpPage />,
+        auth: false,
+      },
+    ]
+
+json-server 라이브러리는 db역할합니다.    
 상위 디렉토리의 db.json 파일에 안에 데이터를 저장합니다.   
 회원 가입이 성공하면 db.json 파일에 안에 members 배열에 객체로 저장됩니다.   
 회원들이 쓴 글 들은 db.json 파일에 안에 posts 배열에 객체로 저장됩니다.    
-json-server로 서버가 켜지면 아래 경로로 접근 하여 axios 메소드로 데이터에 접근합니다.   
+json-server의 db가 켜지면 아래 경로로 axios 메소드를 사용해 데이터에 접근합니다.   
     
     'http://localhost:3004/members'
     'http://localhost:3004/posts'
@@ -75,7 +93,7 @@ json-server로 서버가 켜지면 아래 경로로 접근 하여 axios 메소�
 
 axios를 이용하여 데이터를 주고 받습니다.   
     
-    axios.post('http://localhost:3004/members',{})
+    axios.post('http://localhost:3004/members',{ 보낼 데이터 })
     
     axios.get('http://localhost:3004/posts?_sort=created_At&_order=desc')
     
@@ -88,17 +106,19 @@ scripts에 명령을 추가 했습니다.
 
 상세보기는 페이지 이동을 하지않고 modal로 구현하였습니다.   
 
-modal은 styled-component를 이용하여 구현하였습니다.   
+modal은 styled-component를 이용하여 구현하였습니다.    
 
-redux-toolkit을 이용하여 로그인 상태와 로그인한 회원의 상태를 관리합니다.
+프로젝트는 기본적인 css와 styled-compoenets를 같이 사용했습니다.    
 
+redux-toolkit을 이용하여 로그인 상태와 로그인한 회원의 상태를 관리합니다.    
+store 폴더에 slice와 configureStore가 저장되어 있습니다.
 
 -----
 
 
 ### 간단한 프로젝트 설명   
 
-처음 접하는 페이지는 블로그 페이지입니다.   
+처음 접하는 메인 페이지는 블로그 페이지입니다.   
 
 로그인을 하지 않은 상태에서 글을 쓰려 하거나 글 목록을 클릭하면 로그인 페이지로 이동시킵니다.    
 
@@ -112,11 +132,11 @@ json-server의 경로는 3004로 지정하였습니다. 3004/members에 회원�
 
 성공한 이메일 정보를 네비게이션바 중앙에 표시합니다.     
 
-로그인이 되었다면 다른 사람들의 글을 볼수 있고 새로운 글을 쓸 수 있게 됩니다.     
+로그인이 되었다면 다른 사람들의 글을 클릭해서 modal로 볼수 있고 새로운 글을 쓸 수 있게 됩니다.     
 
 이미 자신이 쓴 글을 수정하거 삭제 할 수 있습니다.    
 
-글을 쓸 때에 제목이나 내용이 비어 있을 수는 없습니다.   
+글을 쓸 때에 제목이나 내용이 비어 있지 못합니다.    
 
-로그인 상태에서 다시 회원가입 페이지나 로그인 페이지로 갈 수는 없습니다.   
+로그인 상태에서 다시 회원가입 페이지나 로그인 페이지로 갈 수는 없습니다.    
 
