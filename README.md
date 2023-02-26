@@ -63,13 +63,25 @@ react를 공부하면서 redux, typescript, nextjs, react-native등 또 새로�
 로그인 페이지와 회원가입 페이지 그리고 블로그 페이지가 존재합니다.   
 
 json-server를 db역할로 사용하였습니다.    
+회원 가입되면 members에 저장됩니다.
+글은 post에 저장됩니다.
+    
+    'http://localhost:3004/members'
+    'http://localhost:3004/posts'
 
 상위 디렉토리의 db.json 파일에 안에 데이터를 저장하고 불러옵니다.   
 
 axios를 이용하여 데이터를 주고 받습니다.   
+    
+    axios.post('http://localhost:3004/members',{})
+    
+    axios.get('http://localhost:3004/posts?_sort=created_At&_order=desc')
+    
+concurrently는 db와 client를 동시에 실행하기 위해서 사용합니다.   
+scripts에 명령을 추가 했습니다.
 
-concurrently는 db와 client를 동시에 실행하기 위해서 사용합니다.    
-
+    "dev": "concurrently \" npm run db \" \" npm run start \"",
+    
 블로그 글을 클릭하면 상세보기가 가능합니다.   
 
 상세보기는 페이지 이동을 하지않고 modal로 구현하였습니다.   
