@@ -10,7 +10,8 @@ https://judeyong.github.io/react-blog/
 -----
 
 
-깃허브페이지 배포는 정적으로만 작동되어서 json-server을 이용한 db 역할이 되지 않는다고 합니다.
+### 깃허브페이지 배포는 정적으로만 작동되어서 json-server을 이용한 db 역할이 되지 않는다고 합니다...   
+
 
 
 -----
